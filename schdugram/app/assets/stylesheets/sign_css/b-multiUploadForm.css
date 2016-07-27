@@ -1,0 +1,53 @@
+.b-multiUploadForm__button {
+    width: 121px;
+    height: 40px;
+    position: absolute;
+    opacity: 0;
+}
+
+.hidden-button {
+    width: 0px!important;
+    height: 0px!important;
+    overflow: hidden!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.b-multiUploadForm__editButton {
+    width: 100px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.b-multiUploadForm__errorMessage {
+    display: none;
+}
+
+.b-multiUploadForm__successMessage {
+    display: none;
+}
+
+.b-multiUploadForm_error .b-multiUploadForm__errorMessage {
+    display: block;
+}
+
+.b-multiUploadForm_success .b-multiUploadForm__successMessage {
+    display: block;
+}
+
+.b-multiUploadForm_uploading .b-multiUploadForm__submitButton,
+.b-multiUploadForm__uploadButton {
+    display: none;
+}
+.b-multiUploadForm__contentBlock{
+    display: none;
+}
+
+.b-multiUploadForm__content .b-multiUploadForm__contentBlock{
+    display: block;
+}
+
+.b-multiUploadForm_uploading .b-multiUploadForm__uploadButton {
+    display: inline-block;
+}

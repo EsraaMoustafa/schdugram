@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title><%= yield(:title) %></title>
+   <!-- Favicon -->
+    <%= favicon_link_tag 'icons/favicon.ico' %>
+   <!-- Favicon -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- Using Font Awesome -->
+  <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' %>
+  <%= stylesheet_link_tag 'http://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css' %>
+  <%= stylesheet_link_tag 'http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css' %>
+  <%= stylesheet_link_tag 'http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css' %>
+
+  <!-- end -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<%= yield %>
+<!-- Placed at the end of the document so the pages load faster -->
+ <%= javascript_include_tag 'home_js/jquery-1.11.3.min.js' %>
+ <%= javascript_include_tag 'home_js/jquery.bxslider.min.js' %>
+ <%= javascript_include_tag 'home_js/jquery.scrollTo-1.4.3.1-min.js' %>
+ <%= javascript_include_tag 'home_js/jquery.sharrre.min.js' %>
+ <%= javascript_include_tag 'home_js/bootstrap.min.js' %>
+ <%= javascript_include_tag 'home_js/masonry.pkgd.min.js' %>
+ <%= javascript_include_tag 'home_js/modernizr.custom.js' %>
+ <%= javascript_include_tag 'home_js/page-transitions.js' %>
+ <%= javascript_include_tag 'home_js/easing.min.js' %>
+ <%= javascript_include_tag 'home_js/jquery.svg.js' %>
+ <%= javascript_include_tag 'home_js/jquery.svganim.js' %>
+ <%= javascript_include_tag 'home_js/jquery.backgroundvideo.min.js' %>
+ <%= javascript_include_tag 'home_js/froogaloop.min.js' %>
+ <%= javascript_include_tag 'home_js/startup-kit.js' %>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46264715-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

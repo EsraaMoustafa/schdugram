@@ -1,0 +1,649 @@
+<style>
+        .header-19-sub .buttons {
+                margin-top: 55px;
+            display: inline-block;
+    vertical-align: middle;
+        }
+        .header-19 .navbar .brand img:first-child {
+            border:0;
+            background-color: transparent;
+            border-radius: 0;
+                -webkit-border-radius: 0;
+        }
+        .header-19 .navbar .brand {
+            opacity:1;
+        }
+        .header-19 .navbar .brand > span {
+            opacity:1;
+            left:0;
+            font-size:50px;
+            padding-top:30px;
+            line-height: 70px;
+        }
+        .navbar{
+            border-radius:0;
+        }
+        .navbar-right > .btn-xs {
+            margin-top:10px;
+            margin-bottom:0;
+        }
+        .content-36 p {
+                width: 88%;
+                color:white;
+        }
+        body > .navbar-collapse .nav > li > a {
+            color:#A6A9AB;
+        }
+        .price-4 .description-detail > * > * + * {
+            margin-top: 0;
+        }
+ </style>
+<%= content_for(:title, "Schdugram") %>
+ <div class="page-wrapper"><header class="header-19">
+    <div class="container">
+        <div class="row">
+            <div class="navbar col-sm-12" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"></button>
+                    <a class="brand" href="#">
+		<%= image_tag("home_images/logo_80h.png", :width=>"80", :height=>"80", :alt=>"") %> <span class="hidden-xs">ScheduGram</span>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                        <li><a href="#compare">COMPARE</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <nav class="navbar navbar-default" role="navigation" style="margin-bottom:0;background-color:#ebedee;">
+  <div class="">
+    <div class="container nav">
+        <div class="navbar-right">
+            <a class="btn btn-primary btn-xs pull-right" style="margin-right:10px;" href="/users/sign_up"><span>Sign up</span></a>
+            <a class="btn btn-info btn-xs pull-right" href="#" type="button">Sign in</a>
+
+        </div>
+    </div>
+  </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->
+</section>
+<section class="header-19-sub" style="padding-top:300px;">
+    <div class="background">&nbsp;</div>
+         <%= image_tag("home_images/ipad@2x.png", :class=>"hidden-xs" , :alt=>"") %>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>An easier way to manage your Instagram accounts</h1>
+                <p>ScheduGram is used by social media managers around the world who need an easier way to manage Instagram for their clients and brands. Schedugram features web uploading of images or video, scheduling for later, and supports multiple accounts.</p>
+                <div class="buttons" style="padding-top:20px;">
+                    <a class="btn btn-primary" href="app.schedugr.am/signup/index.html"><span>Start your 7 day free trial</span></a>
+                    <a class="btn btn-info" href="app.schedugr.am/signin/index.html" style="margin-left: 20px;"><span>Sign in</span></a>
+                </div>
+                <div class="additional-links">
+                    Be sure to take a look at our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<a name="features"></a>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="collapse navbar-collapse">
+    <div class="container nav">
+        <ul class="nav navbar-nav">           
+            <li class="active"><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#compare">Compare</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-right">
+            <a class="btn btn-primary btn-xs" style="margin-right:10px;" href="/users/sign_up"><span>Sign up</span></a>
+            <a class="btn btn-info btn-xs pull-right" href="app.schedugr.am/signin/index.html" type="button">Sign in</a>
+        </div>
+    </div>
+  </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->
+</section>
+<section class="content-5">
+    <div class="container">
+          <%= image_tag("icons/magic-wand@2x.png", width: "200" , height: "200" ,class: "img-responsive" , alt: "") %>
+
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h3>An easier way to manage your Instagram accounts</h3>
+
+                <p class="lead">Worry about the content, not the posting.</p>
+                <p style="text-align:center !important;">Unlike other solutions, you don't have to have your phone on you at the time something is scheduled, or muck around posting it yourself. ScheduGram does it all for you.</p>
+            </div>
+        </div>
+        <div class="row features">
+            <div class="col-sm-2 col-sm-offset-2">
+		<%= image_tag("home_images/upload_graphic.jpg", width: "150" , class: "img-responsive" , alt: "Upload") %>
+            </div>
+            <div class="col-sm-6">
+                <h6>Web upload</h6>
+                <p>Upload your <strong>images or videos</strong> to be posted to your Instagram account. You can crop, add filters or text or rotate images before you post.</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-2 col-sm-offset-2">
+               <%= image_tag("home_images/schedule_graphic.jpg", width: "150" , class: "img-responsive" , alt: "Calendar") %>
+            </div>
+            <div class="col-sm-6">
+                <h6>Post now or schedule for later</h6>
+                <p>Once you've upload your images or videos, you can choose to post them immediately or schedule them for any time in the future using our simple interface. Perfect for planning campaigns!</p>
+            </div>
+        </div>
+        <div class="row features">
+            <div class="col-sm-2 col-sm-offset-2">
+	        <%= image_tag("home_images/multi_acc_graphic.jpg", width: "150" , class: "img-responsive" , alt: "Multiple accounts") %>
+            </div>
+            <div class="col-sm-6">
+                <h6>Multiple accounts</h6>
+                <p>You can manage multiple Instagram accounts through one easy web-based interface. <strong>No more logging in and out of the Instagram app to switch accounts</strong>!</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-2 col-sm-offset-2">
+      		<%= image_tag("home_images/multi_user_graphic.jpg", width: "150" , class: "img-responsive" , alt: "Calendar") %>
+            </div>
+            <div class="col-sm-6">
+                <h6>Multiple users</h6>
+                <p>Let multiple users log into your ScheduGram account schedule posts for your accounts, and see who has scheduled what.</p>
+            </div>
+        </div>
+        <div class="row" style="padding-top:60px;">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p><strong>Please Note</strong>: ScheduGram is a third party app and is not affiliated with Instagram, nor endorsed or certified by Instagram. All Instagram™ logos and trademarks displayed on this application are property of Instagram. <a href="http://schedugram.freshdesk.com/support/solutions/articles/1000044138" target="_blank">More information is here</a>. </p>
+            </div>
+        </div>
+    </div>
+</section><section class="content-11">
+    <div class="container">
+        <span>Start a 7 day free trial today to see how much time you save with Schedugram</span>
+        <a class="btn btn-large btn-danger" href="app.schedugr.am/signup/index.html">TRY IT NOW</a>
+    </div>
+</section>
+<section class="content-5" style="padding-bottom:0;">
+    <div class="container">
+        <%= image_tag("icons/Responsive1@2x.png", width: "200" , height: "200") %>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h3>Reduce your Instagram headaches</h3>
+                <p class="lead">ScheduGram is the missing solution for brands looking to publish high quality images and videos to Instagram.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content-31">
+    <div class="container">
+        <div class="row">
+            <div class="number">1</div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Schedule your content</h3>
+
+                <p>Whether you're creating a unique Instagram campaign or planning to post your images or video in advance, ScheduGram lets you schedule any content to be posted at a future date and time.</p>
+                <p>When the time comes, ScheduGram posts the content for you. You don't need to be carrying your phone – no interaction required on your part.</p>
+                <div class="box">
+		    <%= image_tag("home_images/active_schedules.jpg", class: "img-responsive") %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="number">2</div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Multiple accounts</h3>
+
+                <p>Many brands and agencies look after multiple Instagram accounts. Posting images to different accounts no longer requires multiple devices or time-consuming repeat logins – you can manage them all through ScheduGram. Just toggle the ones that you're scheduling content for!</p>
+
+                <div class="box">
+		    <%= image_tag("home_images/upload_bulk.jpg", class: "img-responsive") %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="number">3</div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Create awesome content</h3>
+
+                <p>Our easy-to-use image editor lets you edit images before you upload them. You can crop, add filters, text or images, rotate, fix colours and more.</p>
+                <p>We also provide direct integration with <a href="http://canva.com/">Canva</a>, so you can design freaking awesome images to be posted.</p>
+
+                <div class="box">
+		    <%= image_tag("home_images/image_editor.jpg", class: "img-responsive") %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="number">4</div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Bulk uploads</h3>
+
+                <p>Photoshop maestro? You probably don't need to pre-edit your posts before scheduling them. We provide a bulk upload tool to help you out, so you can upload images in bulk and set a caption and day/time to post them with speed.</p>
+                <p>Or you can save your images as a draft, and then schedule them in at another time.</p>
+
+                <div class="box">
+		    <%= image_tag("home_images/bulk_upload.jpg", class: "img-responsive") %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="number">5</div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Multiple users</h3>
+
+                <p>The best things in the world involve collaboration. As a result, you can now share your Instagram accounts with other users -- so that you can invite other team members to also schedule posts, or upload drafts for you to schedule.</p>
+                <p>You can also see who has scheduled what for accountability.</p>
+
+                <div class="box">
+	      	    <%= image_tag("home_images/multi_user.jpg", :class=>"img-responsive") %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content-12">
+    <a class="wide btn-wide" href="app.schedugr.am/signup/index.html" style="color:white;"><b>Start your 7 day free trial now</b></a>
+</section>
+
+<section class="content-17 v-center">
+    <div>
+        <div class="container">
+            <h3>
+	      <%= image_tag("icons/twitter@2x.png", :height=>"100" , :width=>"100" ) %>
+           </h3>
+
+            <div id="c-17_myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">Social Media Management Must-Have: @Schedugram | http://bit.ly/1NfT4JO  | #socialmedia #smm #cmgr <br /><a href="https://twitter.com/chadrichards/status/651382468507922432">@chadrichards</a></div>
+                    <div class="item">Have you tried @schedugram? It’s one of the most user-friendly Instagram tools on the market. Check it! @PostPlanner http://bit.ly/1xikvoD <br /><a href="https://twitter.com/klshoesshop/status/649230944776261632">@klshoesshop</a></div>
+                    <div class="item">Social managers rejoice. @ScheduGram: literally the only option for Instagram scheduling. http://buff.ly/1qEyxCk <br /><a href="https://twitter.com/rewilkin/status/509694278642438144">@rewilkin</a></div>
+                    <div class="item">Need a way to upload and schedule your @Instagram accounts? Yes "accounts" plural! Check out @schedugram or visit http://schedugr.am <br /><a href="https://twitter.com/BenRequena/status/506924779786756097">@BenRequena</a></div>
+                    <div class="item">You can now schedule #Instagram posts and run multiple accounts with this Aussie start-up's ingeniously human hack: http://ow.ly/t12Zl <br /><a href="https://twitter.com/StartupSmartnow/status/428078954126528512">@StartupSmartnow</a></div>
+                    
+                </div>
+            </div>
+            <p>
+                You can <a href="http://twitter.com/schedugram">follow us</a> on Twitter if you're curious.
+            </p>
+        </div>
+    </div>
+</section>
+<section>
+<a name="pricing"></a>
+<a name="pricingtable"></a>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="collapse navbar-collapse">
+    <div class="container nav">
+        <ul class="nav navbar-nav">           
+            <li><a href="#features">Features</a></li>
+            <li class="active"><a href="#pricing">Pricing</a></li>
+            <li><a href="#compare">Compare</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-right">
+            <a class="btn btn-primary btn-xs" style="margin-right:10px;" href="/users/sign_up"><span>Sign up</span></a>
+            <a class="btn btn-info btn-xs pull-right" type="button" href="app.schedugr.am/signin/index.html">Sign in</a>
+
+        </div>
+    </div>
+  </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->
+</section>
+<section class="price-4">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-12" style="text-align:center; margin-bottom:60px;">
+            <h3>Awesome features that won't break the bank</h3>
+            <p class="lead">ScheduGram grows with your brand. Our plans are based on the number of accounts you manage, and the amount of time we save you!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 description-detail pull-right">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <span class="fa fa-dollar fa-2x"></span>
+                        <h6>Pay for each account</h6>
+                        You pay for each account that you add to Schedugram.
+                    </div>
+                    <div class="col-xs-6">
+                        <span class="fa fa-calendar fa-2x"></span>
+                        <h6>Add or remove anytime</h6>
+                        You can add or remove accounts whenever - your plan is pro-rated.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <span class="fa fa-cubes fa-2x"></span>
+                        <h6>Bulk discounts</h6>
+                        Manage more than 10 accounts? You'll get a discount.
+                    </div>
+                    <div class="col-xs-6">
+                        <span class="fa fa-comments-o fa-2x"></span>
+                        <h6>Something custom?</h6>
+                        Large customer who doesn't fit the mould? <a href="#contact">Contact us</a>.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 pull-left">
+                <h4>Calculate your monthly cost</h4>
+                            <script>
+                function calculateAmounts(){
+                    var currency = $("#selectedCurrency").val();
+                    $('.pricingrow').each(function(index,item){
+                        if($(this).find(".followerselect").val() ==='lessthan10'){
+                            if(currency === 'usd' || currency === 'aud'){
+                                var amount = 20;
+                            } else if (currency === 'gbp'){
+                                var amount = 12;
+                            }else if (currency === 'eur'){
+                                var amount = 16;
+                            }
+                        } else if($(this).find(".followerselect").val() ==='lessthan100'){
+                            if(currency === 'usd' || currency === 'aud'){
+                                var amount = 30;
+                            } else if (currency === 'gbp'){
+                                var amount = 19;
+                            }else if (currency === 'eur'){
+                                var amount = 25;
+                            }
+                        } else if($(this).find(".followerselect").val()==='lessthan500'){
+                            if(currency === 'usd' || currency === 'aud'){
+                                var amount = 50;
+                            } else if (currency === 'gbp'){
+                                var amount = 32;
+                            }else if (currency === 'eur'){
+                                var amount = 41;
+                            }
+                        } else if($(this).find(".followerselect").val() === 'lessthan1m'){
+                            if(currency === 'usd' || currency === 'aud'){
+                                var amount = 70;
+                            } else if (currency === 'gbp'){
+                                var amount = 45;
+                            }else if (currency === 'eur'){
+                                var amount = 57;
+                            }
+                        } else if($(this).find(".followerselect").val() === 'lessthan2m'){
+                            if(currency === 'usd' || currency === 'aud'){
+                                var amount = 100;
+                            } else if (currency === 'gbp'){
+                                var amount = 65;
+                            }else if (currency === 'eur'){
+                                var amount = 88;
+                            }
+                        } else if($(this).find(".followerselect").val() === 'morethan2m'){
+                            var amount = "Contact us";
+                        }
+                        amount = Math.round(amount);
+                        var acctnumber = $('.pricingrow').length;
+                        if(acctnumber<10){
+                            var discount = 1;
+                        }else if(acctnumber > 9 && acctnumber < 20){
+                            discount = 0.8;
+                        } else if (acctnumber >19 && acctnumber < 30){
+                            discount = 0.75;
+                        } else if (acctnumber >29 && acctnumber < 40){
+                            discount = 0.7;
+                        } else if (acctnumber > 39){
+                            discount = '';
+                        }
+                        if(discount <1){
+                            $(this).find(".acctprice").text(amount*discount);
+                        }
+                        $(this).find(".acctprice").text(Math.round(amount*discount));
+                        $(this).find(".acctprice").val(Math.round(amount*discount));
+                        if($(this).find(".acctprice").text()=="NaN"){
+                            $(this).find(".acctprice").text("Contact us");
+                        }
+                        $('#accountNumber').text(acctnumber);
+                        if(acctnumber>1){
+                            $('#accountNumberText').text("accounts");
+                        }
+                    })
+                    calculateTotals();
+                }
+                function calculateTotals(){
+                    var total = 0;
+                    $('.acctprice').each(function(index,item){
+                        total = Number(total) + Number($(item).val());
+                    });
+                    if(isNaN(total)){
+                        $('#totalcost').text("Contact us");
+                        $('#totalannualcost').text("Contact us");
+                    } else{
+                        $('#totalcost').text(Math.round(total));
+                        $('#totalannualcost').text((Math.round(total))*10);
+                    }
+                }
+                function addRow(){
+                    var template='<tr class="pricingrow"><td><select style="font-size:16px;" class="followerselect" onchange="calculateAmounts()"><option value="lessthan10">0 to 10,000 followers</option><option value="lessthan100">10,001 to 100,000 followers</option><option value="lessthan500">100,001 to 500,000 followers</option><option value="lessthan1m">500,001 to 1,000,000 followers</option><option value="lessthan2m">1,000,001 to 2,000,000 followers</option><option value="morethan2m">More than 2 million followers</option></select></td><td><span class="currency">$</span><span class="acctprice" value="20" >20</span></td></tr>';
+                    $('#pricingcalculator').append(template);
+                    changeCurrency();
+                    calculateAmounts();
+                }
+                function changeCurrency() {
+                    var currency = $("#selectedCurrency").val();
+                    var sign = '$';
+                    if(currency === 'usd' || currency === 'aud'){
+                        sign = '$';
+                    } else if (currency === 'eur'){
+                        sign = '€';
+                    } else if (currency === 'gbp'){
+                        sign = '£';
+                    }
+                    $('.currency').text(sign);
+                    calculateAmounts();
+                }
+            </script>
+                <div class="currencydiv" style="padding-bottom:20px;">
+                    <p>1. What currency would you like to pay with?</p>
+                    <select style="font-size:16px;" onchange="changeCurrency()" id="selectedCurrency">
+                        <option value="usd">US Dollars (USD)</option>
+                        <option value="aud">Australian dollars (AUD)</option>
+                        <option value="eur">Euros (EUR)</option>
+                        <option value="gbp">Pounds (GBP)</option>
+                    </select>
+                </div>
+                <p>2. You pay for each account that you manage. Use the button below to add the right number of accounts, then select the right follower size for each account.</p>
+                <div onclick="addRow()" class="btn btn-info" style="padding:8px;">Add another Instagram account</div>
+                <table style="font-size:16px !important;background:white;padding:20px; margin-top:20px; text-align:left;">
+                <thead>
+                <tr>
+                <th style="width:30%; background-color: #2f4154; padding:5px; color:white;">
+                    Number of followers
+                    </th>
+                    <th style="width:15%; background-color: #2f4154; padding:5px; color:white;">
+                    Monthly cost for account
+                    </th>
+                </tr>
+                </thead>
+                <tbody id="pricingcalculator">
+                    <tr class="pricingrow">
+                        <td><select style="font-size:16px;" class="followerselect" onchange="calculateAmounts()">
+                            <option value="lessthan10">0 to 10,000 followers</option>
+                            <option value="lessthan100">10,001 to 100,000 followers</option>
+                            <option value="lessthan500">100,001 to 500,000 followers</option>
+                            <option value="lessthan1m">500,001 to 1,000,000 followers</option>
+                            <option value="lessthan2m">1,000,001 to 2,000,000 followers</option>
+                            <option value="morethan2m">More than 2 million followers</option>
+                  </select></td>
+                        <td><span class="currency">$</span><span class="acctprice" value="20">20</span></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            
+            <div class="clearfix"></div>
+            <div class="col-sm-12" style="padding-top:60px;">
+                <h4 style="text-align:left;">Your total monthly cost will be <span class="currency">$</span><span id="totalcost">20</span> per month for <span id="accountNumber">1</span> Instagram <span id="accountNumberText">account</span>.</h4>
+                <p class="small">10% GST is included for Australian customers. Schedugram does not charge VAT or other international taxes.</p>
+                <a class="btn btn-lg btn-primary center" href="/" style="text-align:center; margin-top:15px;">Start your 7 day free trial now</a>
+
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Frequently asked pricing questions</h3>
+                <p style="text-align:left;"><strong>Can I pay annually?</strong></p>
+                    <p style="text-align:left;">An annual account will cost <span class="currency">$</span><span id="totalannualcost">200</span> – that's 2 months free! Annual accounts can be paid via credit card, Paypal or invoice – contact us to change to annual billing. We only accept credit card payments for monthly accounts (Mastercard, Visa, Amex), and you are billed each month automatically after your trial.</p>
+                <p style="text-align:left;"><strong>When can I cancel?</strong></p>
+                    <p style="text-align:left;">Unless you're on an annual plan, you pay month-to-month and you can cancel at any time (including during the free trial of course). There is a button on your profile page that will let you cancel the account before the next time you are billed.</strong></p>
+                <p style="text-align:left;"><strong>Can I have a free trial?</strong></p>
+                    <p style="text-align:left;">Not a problem! All users get a free 7 day trial, starting from when your first Instagram account is approved. If you have trouble during your trial, feel free to reach out and we will happily reset your trial. Of course, we email you to inform you that the trial is ending so you won't get surprised.</p>
+                <p style="text-align:left;"><strong>Does Schedugram sell followers?</strong></p>
+                    <p style="text-align:left;">We absolutely do <strong>not</strong> sell Instagram followers or Likes, which is forbidden in Instagram's terms and conditions. When we refer to followers above, we are referring to the number of followers each Instagram account that you add has. The number of followers the account has determines the amount you pay each month for that account.</p>
+                <p style="text-align:left;"><strong>Does Schedugram offer bulk or agency discounts?</strong></p>
+                    <p style="text-align:left;">Discounts apply when you add 10 or more Instagram accounts. The discount will be automatically applied in the quote above if you have up to 20 accounts. Any questions, <a href="#contact">just get in touch</a>. </p>
+                <p style="text-align:left;"><strong>Have some more questions?</strong></p>
+                    <p style="text-align:left;">If you have more questions about how Schedugram works or your monthly price, we have a <a href="http://support.schedugr.am/support/solutions/articles/1000165689-terms-and-billing-faq">FAQ page on billing</a>. You can also email us at <a href="mailto:support@schedugr.am">support@schedugr.am</a>.</p>
+            </div>
+        </div>
+    </div>
+    <!--/.container-->
+</section>
+<section>
+<a name="compare"></a>
+<nav class="navbar navbar-default navbar-inverse" role="navigation" style="margin-bottom:0;">
+  <div class="collapse navbar-collapse">
+    <div class="container nav">
+        <ul class="nav navbar-nav">           
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="active"><a href="#compare">Compare</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-right">
+            <a class="btn btn-primary btn-xs" style="margin-right:10px;" href="/users/sign_up"><span>Sign up</span></a>
+            <a class="btn btn-info btn-xs pull-right" type="button" href="app.schedugr.am/signin/index.html">Sign in</a>
+
+        </div>
+    </div>
+  </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->
+</section>
+<section class="content-26 bg-clouds">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>How does ScheduGram compare?</h3>
+
+                <p class="lead">We think ScheduGram is the best Instagram scheduling solution available. <br />Find out what makes us different.</p>
+            </div>
+        </div>
+        <div class="row features">
+            <div class="col-sm-4">
+                <img src="https://maxcdn.icons8.com/Color/PNG/96/Network/upload_to_cloud-96.png" title="Upload to Cloud" width="96">
+                <h6>Unlimited uploads &amp; users</h6>
+                All accounts come with unlimited uploads (of images and videos) and unlimited collaborator users.
+            </div>
+            <div class="col-sm-4">
+                <img src="https://maxcdn.icons8.com/Color/PNG/96/Messaging/delete_message-96.png" title="Delete Message" width="96">
+                <h6>No push notifications</h6>
+                We post for you, not just send you a reminder to your phone when it's time to post.
+            </div>
+            <div class="col-sm-4">
+                <img src="https://maxcdn.icons8.com/Color/PNG/96/Photo_Video/add_image-96.png" title="Add Image" width="96">
+                <h6>Rectangular uploads</h6>
+                Instagram isn't just square anymore. We let you make the most of their new rectangular posts.
+            </div>
+            <div class="col-sm-4">
+                <img src="https://maxcdn.icons8.com/Color/PNG/96/Mobile/two_smartphones-96.png" title="Two Smartphones" width="96">
+                <h6>Uses physical devices</h6>
+                All posts go out using our pool of physical devices on the latest Instagram app. (<a href="http://schedugram.freshdesk.com/support/solutions/articles/1000044134">More information</a>)
+            </div>
+            <div class="col-sm-4">
+                <img src="https://maxcdn.icons8.com/Color/PNG/96/Messaging/quote-96.png" title="Quote" width="96">
+                <h6>Add a 'first comment'</h6>
+                Use our 'first comment' feature to put your hashtags in a comment, rather than the caption. (<a href="http://schedugram.tumblr.com/post/86701228570/first-comment-feature-now-live">More information</a>)
+            </div>
+            <div class="col-sm-4">
+                <img src="https://maxcdn.icons8.com/Color/PNG/96/Household/front_desk-96.png" title="Front Desk" width="96">
+                <h6>Awesome support</h6>
+                We're pretty proud to provide A+ support to all our customers. Give us a try!
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<a name="about"></a>
+<nav class="navbar navbar-default navbar-inverse" role="navigation" style="margin-bottom:0;">
+  <div class="collapse navbar-collapse">
+    <div class="container nav">
+        <ul class="nav navbar-nav">           
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#compare">Compare</a></li>
+            <li class="active"><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-right">
+            <a class="btn btn-primary btn-xs" style="margin-right:10px;" href="/users/sign_up"><span>Sign up</span></a>
+            <a class="btn btn-info btn-xs pull-right" type="button" href="app.schedugr.am/signin/index.html">Sign in</a>
+
+        </div>
+    </div>
+  </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->
+</section>
+<section class="content-36" style="background: url('/assets/home_images/team.jpg') no-repeat center;">
+    <div class="container">
+        <img src="http://dialoguegroup.com.au/logo_wht.png" style="margin-bottom:80px;">
+        <h2>Created by the team at Dialogue Group</h2>
+        <p>Dialogue Group is a team in Australia working to help people have better conversations.</p>
+        <p>We do this through products and services, and work with customers and clients across the world.</p>
+        <a class="btn btn-warning" href="http://dialoguegroup.com.au" style="margin-top:80px;">Find out more about Dialogue Group</a>
+    </div>
+</section>
+<a name="contact"></a>
+<footer class="footer-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+		    <%= image_tag("home_images/logo.png") %>
+            </div>
+            <div class="col-sm-6">
+                <div class="box box-first">
+                    <h6>Tweet us</h6>
+                    <p><a href="http://twitter.com/schedugram">@schedugram</a></p>
+                </div>
+                <div class="box">
+                    <h6>Other information</h6>
+                    <p><a href="https://connectonline.asic.gov.au/RegistrySearch/faces/landing/bySearchId.jspx?searchId=167549877&searchIdType=BUSN&_adf.ctrl-state=1be2q5oazv_4">Schedugram is a registered entity of Dialogue Consulting Pty Ltd with the Australian Securities &amp; Investments Commission.</a></p>
+                    <p>ScheduGram is a third party app and is not affiliated with Instagram, nor endorsed or certified by Instagram. All Instagram™ logos and trademarks displayed on this application are property of Instagram. <a href="http://schedugram.freshdesk.com/support/solutions/articles/1000044138">More information is here</a>.</p>
+                    <p class="small">&copy; Dialogue Group 2015.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 box">
+                <h6>Contact us</h6>
+                <p>Need help? Don’t hestiate to ask us about anything.</p>
+                <p>If you're a customer, check out the <a href="http://support.schedugr.am/support/solutions/">support knowldgebase</a> for information, or raise a support ticket.</p>
+                <p>For anything else, email us at <a href="mailto:hello@schedugr.am">hello@schedugr.am</a>. We'll get back to you shortly!</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="content-23 bg-midnight-blue" style="background-image: url('/assets/home_images/background-melbourne.jpg');">
+    <div class="holder v-center">
+        <div>
+            <div class="container">
+                <div class="hero-unit hero-unit-bordered">
+                    <h1>Made in Melbourne</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="control-btn fui-arrow-down" href="#"> </a>
+</section>
+
